@@ -20,15 +20,7 @@ Bankacılık, sigortacılık ve telekomünikasyon sektörlerinde yoğun kullanı
 docker compose up -d
 ```
 
-SQL Developer bağlantı bilgileri:
-
-```
-Host:         localhost
-Port:         1522
-Service Name: XEPDB1
-Kullanıcı:    ticket_user
-Şifre:        Ticket1234
-```
+Bağlantı bilgileri için `docker-compose.yml` dosyasına bakın.
 
 ## Veritabanı Yapısı
 

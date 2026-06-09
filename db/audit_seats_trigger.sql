@@ -1,1 +1,0 @@
-SELECT text FROM user_errors WHERE name = 'AUDIT_SEATS_TRIGGER';
