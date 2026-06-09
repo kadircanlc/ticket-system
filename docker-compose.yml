@@ -1,0 +1,16 @@
+services:
+  oracle:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: ticket_db
+    environment:
+      ORACLE_PASSWORD: Admin1234
+      APP_USER: ticket_user
+      APP_USER_PASSWORD: Ticket1234
+    ports:
+      - "1522:1521"
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+      - ./db:/container-entrypoint-initdb.d
+
+volumes:
+  oracle_data:
